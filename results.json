@@ -2,65 +2,78 @@
   "results": {
     "multimedqa": {
       "alias": "stem",
-      "acc,none": 0.25479063165365506,
-      "acc_stderr,none": 0.005093166312537031
+      "acc,none": 0.25294535131298795,
+      "acc_stderr,none": 0.00511038938165138
     },
     "medmcqa": {
-      "acc,none": 0.2175472149175233,
-      "acc_stderr,none": 0.0063798992426995285,
-      "acc_norm,none": 0.2175472149175233,
-      "acc_norm_stderr,none": 0.0063798992426995285,
+      "acc,none": 0.22376284962945256,
+      "acc_stderr,none": 0.006444647825463721,
+      "acc_norm,none": 0.22376284962945256,
+      "acc_norm_stderr,none": 0.006444647825463721,
       "alias": " - medmcqa"
     },
     "medqa_4options": {
-      "acc,none": 0.2545168892380204,
-      "acc_stderr,none": 0.012213317633567469,
-      "acc_norm,none": 0.2545168892380204,
-      "acc_norm_stderr,none": 0.012213317633567469,
+      "acc,none": 0.24273369992144542,
+      "acc_stderr,none": 0.012021143939194448,
+      "acc_norm,none": 0.24273369992144542,
+      "acc_norm_stderr,none": 0.012021143939194448,
       "alias": " - medqa_4options"
     },
     "mmlu_anatomy": {
       "alias": " - anatomy (mmlu)",
-      "acc,none": 0.24444444444444444,
-      "acc_stderr,none": 0.03712537833614865
+      "acc,none": 0.3333333333333333,
+      "acc_stderr,none": 0.04072314811876837
     },
     "mmlu_clinical_knowledge": {
       "alias": " - clinical_knowledge (mmlu)",
-      "acc,none": 0.2641509433962264,
-      "acc_stderr,none": 0.027134291628741713
+      "acc,none": 0.2528301886792453,
+      "acc_stderr,none": 0.026749899771241235
     },
     "mmlu_college_biology": {
       "alias": " - college_biology (mmlu)",
-      "acc,none": 0.2638888888888889,
-      "acc_stderr,none": 0.03685651095897532
+      "acc,none": 0.25,
+      "acc_stderr,none": 0.03621034121889507
     },
     "mmlu_college_medicine": {
       "alias": " - college_medicine (mmlu)",
-      "acc,none": 0.3468208092485549,
-      "acc_stderr,none": 0.036291466701596636
+      "acc,none": 0.27167630057803466,
+      "acc_stderr,none": 0.03391750322321659
     },
     "mmlu_medical_genetics": {
       "alias": " - medical_genetics (mmlu)",
-      "acc,none": 0.24,
-      "acc_stderr,none": 0.04292346959909283
+      "acc,none": 0.18,
+      "acc_stderr,none": 0.038612291966536955
     },
     "mmlu_professional_medicine": {
       "alias": " - professional_medicine (mmlu)",
-      "acc,none": 0.22058823529411764,
-      "acc_stderr,none": 0.025187786660227276
+      "acc,none": 0.2647058823529412,
+      "acc_stderr,none": 0.026799562024887678
     },
     "pubmedqa": {
-      "acc,none": 0.552,
-      "acc_stderr,none": 0.02226169729227011,
+      "acc,none": 0.504,
+      "acc_stderr,none": 0.022382357781962212,
       "alias": " - pubmedqa"
     }
   },
   "groups": {
     "multimedqa": {
       "alias": "stem",
-      "acc,none": 0.25479063165365506,
-      "acc_stderr,none": 0.005093166312537031
+      "acc,none": 0.25294535131298795,
+      "acc_stderr,none": 0.00511038938165138
     }
+  },
+  "group_subtasks": {
+    "multimedqa": [
+      "mmlu_college_biology",
+      "mmlu_professional_medicine",
+      "mmlu_medical_genetics",
+      "mmlu_college_medicine",
+      "mmlu_clinical_knowledge",
+      "mmlu_anatomy",
+      "medqa_4options",
+      "medmcqa",
+      "pubmedqa"
+    ]
   },
   "configs": {
     "medmcqa": {
@@ -410,7 +423,7 @@
   },
   "config": {
     "model": "hf",
-    "model_args": "pretrained=google/gemma-7b",
+    "model_args": "pretrained=aaditya/gemma_out",
     "batch_size": "8",
     "batch_sizes": [],
     "device": "cuda:0",
@@ -419,5 +432,5 @@
     "bootstrap_iters": 100000,
     "gen_kwargs": null
   },
-  "git_hash": "c26a6ac7"
+  "git_hash": "2683fbbb"
 }
